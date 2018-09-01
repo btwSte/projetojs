@@ -22,18 +22,27 @@
         $('h1').css("color", "#f66").hide().delay('1000').fadeIn('slow').text('Links 2');
         */
 
-        /*em bloco
+        //em bloco
         $('h1')
           .css("color", "#8989ff")
           .hide()
-          .delay('1000')
+          // .delay('1000')
           .fadeIn('slow')
-          .text('Links 3')
+          .text('Welcome')
           .click(function(){
-            $('body').css("background", "#ccc")
-            $('h1').css("color", "#fff");
+            // $('body').css("background", "#ccc")
+            $('h1').css("color", "#555")
           });
-        */
+
+        $('a').css({
+          color: '#8989ff',
+          display: 'block'
+        });
+
+        $('.link2').css('color', '#008900');
+
+        $('#link3').css('color', '#ff62ff');
+
       });
 
 
