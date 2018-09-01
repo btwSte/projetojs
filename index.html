@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+  <head>
+    <meta charset="utf-8">
+    <title>Projeto com JS</title>
+    <script src="js\jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+      // primeiro metodo
+      $(document).ready(function(){
+
+        /* em cadeia
+        $('h1').css("color", "#f66");
+        $('h1').hide();
+        $('h1').delay('1000');
+        $('h1').fadeIn('slow');
+        $('h1').text('Titulo trocado');
+        */
+
+        /* in line
+        $('h1').css("color", "#f66").hide().delay('1000').fadeIn('slow').text('Links 2');
+        */
+
+        /*em bloco
+        $('h1')
+          .css("color", "#8989ff")
+          .hide()
+          .delay('1000')
+          .fadeIn('slow')
+          .text('Links 3')
+          .click(function(){
+            $('body').css("background", "#ccc")
+            $('h1').css("color", "#fff");
+          });
+        */
+      });
+
+
+    </script>
+  </head>
+  <body>
+    <div id="segura">
+
+      <h1>Links</h1>
+
+      <a href="#"> Link 1 </a>
+      <a href="#" class="link2"> Link 2 </a>
+      <a href="#" id="link3"> Link 3 </a>
+
+    </div>
+  </body>
+</html>

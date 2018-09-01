@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Javascript</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js\jquery-3.3.1.min.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function(){
@@ -20,7 +20,6 @@
           $.ajax({
             type: 'GET',
             url: 'req.php',
-
 
             success: function (data){
               alert(data);
@@ -39,9 +38,11 @@
     </script>
   </head>
   <body>
-    <h1>Requisição com ajax</h1>
+    <div id="container">
+      <h1>Requisição com ajax</h1>
 
-    <a href="#" id="teste"> Clique aqui</a> para visualizar mensagem via Ajax.
-    <p id="carregando" class="non">Carregando Ajax</p>
+      <a href="#" id="teste"> Clique aqui</a> para visualizar mensagem via Ajax.
+      <p id="carregando" class="non">Carregando Ajax</p>
+    </div>
   </body>
 </html>
